@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        ul{
+            padding: 0;
+            margin:0;
+            list-style-type: none;
+            overflow: hidden;
+            background-color:black;
+            border: 1px solid blue inset;
+            box-shadow: 3px 3px 3px 3px blue;
+             }
+        li{
+            float:left;
+            padding: 7px;
+            
+        }
+
+        li a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            
+
+        }
+        li a:hover{
+            background-color: grey;
+            opacity: 0.9;
+        }
+        img{
+            width:250px;
+            height: 300px;
+        }
+        .card{
+            width: fit-content;
+            margin: 1%;
+            border: 1px solid brown;
+            display: inline-block;
+            padding: 5px;
+            box-shadow: 3px 3px 5px 5px grey;
+            opacity: 0.9;
+
+            
+        }
+        .card:hover{
+            opacity: 0.5;
+
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        .blur {filter: blur(2px);}
+        .brightness {filter: brightness(100%);}
+        .contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(280deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px pink);}
+
+
+
+
+        
+    </style>
+</head>
+<body  style="background-color: black;">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="vediogallery.html">Vedios</a></li>
+        <li><a href="imagegallery.html">Images</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" id="sp">Contact</a></li>
+    </ul>
+    <div class="card">
+        <img class="blur" src="th.jpg" alt="flower" >
+        <p>blur</p>
+    </div>
+    <div class="card">
+        <img class="brightness" src="th.jpg" alt="flower" >
+        <p>brightness</p>
+    </div>
+
+    <div class="card">
+        <img class="contrast" src="th.jpg" alt="flower" >
+        <p>contrast</p>
+    </div>
+    <div class="card">
+        <img class="grayscale" src="th.jpg" alt="flower" >
+        <p>grayscale</p>
+    </div>
+    <div class="card">
+        <img class="huerotate" src="th.jpg" alt="flower" >
+        <p>huerotate</p>
+    </div>
+    <div class="card">
+        <img class="invert" src="th.jpg" alt="flower" >
+        <p>invert</p>
+    </div>
+
+    <div class="card">
+        <img class="opacity" src="th.jpg" alt="flower" >
+        <p>opacity</p>
+    </div>
+    <div class="card">
+        <img class="saturate" src="th.jpg" alt="flower" >
+        <p>saturate</p>
+    </div>
+    <div class="card">
+        <img class="sepia" src="th.jpg" alt="flower" >
+        <p>sepia</p>
+    </div>
+    <div class="card">
+        <img class="shadow" src="th.jpg" alt="flower" >
+        <p>drop shadow</p>
+    </div>
+    <div class="card">
+        <img src="th.jpg" alt="flower" >
+        <p>normal</p>
+    </div>
+
+
+
+</body>
+</html>
